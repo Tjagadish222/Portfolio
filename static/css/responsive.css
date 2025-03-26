@@ -1,0 +1,231 @@
+/*-------------------------------------------
+  Responsive Styles
+-------------------------------------------*/
+
+/* Tablets and larger (768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    :root {
+        --section-padding: 80px 0;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-text {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+    
+    .hero-text p {
+        margin: 0 auto 40px;
+    }
+    
+    .hero-btns {
+        justify-content: center;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-image {
+        margin-bottom: 50px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-content {
+        flex-direction: column;
+    }
+    
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+}
+
+/* Mobile devices (767px and down) */
+@media only screen and (max-width: 767px) {
+    :root {
+        --section-padding: 70px 0;
+        --header-height: 70px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Header & Navigation */
+    .nav-menu {
+        position: fixed;
+        top: var(--header-height);
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - var(--header-height));
+        background-color: var(--background-color);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 20px;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        margin: 15px 0;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    /* Hero Section */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-text {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    
+    .hero-text p {
+        margin: 0 auto 30px;
+    }
+    
+    .hero-btns {
+        justify-content: center;
+    }
+    
+    .hero-image {
+        height: 300px;
+    }
+    
+    .hero-shape {
+        width: 250px;
+        height: 250px;
+    }
+    
+    /* About Section */
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .about-image {
+        width: 100%;
+    }
+    
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Skills Section */
+    .category-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Projects Section */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Certifications Section */
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .certification-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .certification-icon {
+        margin: 0 auto 15px;
+    }
+    
+    /* Resume Section */
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact Section */
+    .contact-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+/* Small mobile devices (375px and down) */
+@media only screen and (max-width: 375px) {
+    :root {
+        --section-padding: 60px 0;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    .btn {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+    
+    .section-header {
+        margin-bottom: 40px;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero-btns .btn {
+        width: 100%;
+    }
+    
+    .hero-shape {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .filter-btn {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}

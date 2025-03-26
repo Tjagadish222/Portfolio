@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0 0 100 40">
+  <style>
+    .logo-text { font-family: 'Montserrat', sans-serif; font-weight: 600; }
+    .p-letter { fill: #4a6cf7; }
+    .f-letter { fill: #1e293b; }
+  </style>
+  <text x="10" y="30" class="logo-text p-letter" font-size="30">P</text>
+  <text x="30" y="30" class="logo-text f-letter" font-size="25">ortfolio</text>
+</svg>
